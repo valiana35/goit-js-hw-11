@@ -13,7 +13,6 @@ form.addEventListener('submit', (event) => {
     if (input.value === "") {
         return false;
     }
-    gallery.innerHTML = "";
     loader.classList.add("loader");
     fetchImages()
     .then((data) => renderImages(data))
